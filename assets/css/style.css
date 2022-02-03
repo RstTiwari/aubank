@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@300&display=swap');
+body{
+    margin:0 0;
+    padding:0 0;
+    box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+/*au desktop header*/
+.audesktop__header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px 130px;
+    height:64px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.audesktop__header__left{
+    flex: 1;
+    display: flex;
+    align-items:center;
+   
+}
+.audesktop__header__aubanklogo{
+    width: 80px;
+    height:40px;
+    margin: 0 10px 0 0 ;
+}
+.audesktop__header__silverspoonlogo{
+    width:50px;
+    height:40px;
+    flex-grow: 0;
+    margin: 0 36px 0 0 ;
+}
+.audesktop__header__location__title{
+    font-size:12px;
+    font-weight:500;
+    color: #565656;
+    margin-top:2px;
+    font-family: Quicksand;
+
+}
+.audesktop__header__location__address{
+    font-size:14px;
+    font-weight: 600;
+    margin-top:3px;
+    color: #3d3d3d;
+}
+.audesktop__header__location__address a{
+    text-decoration:underline;
+    
+}
+.audesktop__header__location__address a.active{
+    color: none;
+}
+.audesktop__header__location__address__changeLogo{
+    font-size:12px;
+    font-weight: 600;
+    color: #f37435;
+    margin: 5px 4px 1px 8px;
+
+}
+.audesktop__header__center{
+    display:none;
+}
+.audesktop__header__center.active{
+    flex:1.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.audeskheader__input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 46px;
+    padding: 10px 16px;
+    min-width: 400px;
+   margin-left: 30px;
+
+   
+
+}
+.input_-search__icon{
+    left: 14px;
+    top: 10px;
+    opacity: 0.5;
+}
+input{
+  border:none;
+  outline: none;
+
+}
+.audesktop__header__right{
+display:flex;
+align-items: center;
+
+} 
+.audesktop__header__right__download{
+    margin-right: 42.2px;
+}
+.audesktop__header__right__downloadBtn{
+   
+    height:36px;
+    background-color: #f37435;
+    color: #fff;
+    border:none;
+    border-radius: 4px;
+    padding:10px 14px 11px;
+}
+
+/*au map form */
+.aumap__form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:16px 130px 40px;
+    background-color: #6d3078;
+    
+}
+.aumap__form_search{
+    width:570px;
+    height:48px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items:center;
+    padding: 15px 304px 15px 20px;
+    
+}
+.search-icon{
+    opacity: 0.5;
+}
+.aumap__form__input{
+    opacity: 0.5;
+    font-size:14px;
+    font-weight:500;
+    color: #777;
+
+}
+
+.aumap__form__dinning{
+    margin-top:16px;
+  
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+/*Au bank dinning section*/
+.aubank__dinning__section{
+    background-image:url(../images/bg-exploreRestro.png);
+    width:100%;
+    height:670px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction:column;
+}
+.aubank__crave__title{
+    width:798px;
+    height:225px;
+    font-size:60px;
+    font-family: 'Ubuntu', sans-serif;
+    padding:157px 111px;
+    font-size: 50px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6d3078;
+    
+}
+.aubank__explore__section{
+    padding:74px 111px;
+
+}
+
+.aubank__explore__btn{
+    height:48px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:#f37435;
+    color: #fff;
+    border:none;
+    padding:14px 19px 14px 16px;
+    border-radius:4px;
+    
+}
+
+/*left side help drwaer design*/
+.auhelp__right__drawer{
+    display: none;
+    position:fixed;
+}
+
+.auhelp__right__drawer.active{
+    display:block;
+    float:right;
+    position:fixed;
+    right:0;
+    top:0;
+    height:100%;
+    width:25vw;
+    background-color:#fff2f0;
+    z-index: 11111;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+
+.help__closeBtn{
+    float:right;
+   
+    padding:15px 10px;
+    cursor: pointer;
+}
+.auhelp__right__drawer__container{
+    margin: 70px 20px;
+    padding: 20px;
+    border: 1px solid rgb(238, 213, 213);
+   
+}
+.auhelp__call__section{
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.auhelp__call__section__left{
+    display:flex;
+    flex: 1;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.auhelp__call__section__left1{
+    display:flex;
+    flex: 0.5;
+   
+}
+.auhelp__call__section__left2A{
+    margin-bottom: 10px;
+  
+   
+}
+.auhelp__call__section__right{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+ /*near by restaurent*/
+ .exploreRestro {
+    background-color: #fff9ea;
+    background-image: url("../images/bg-exploreRestro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-position: 100% center;
+    width:100%;
+    height:670px;
+  }
+
+  .exploreRestro__content {
+    padding: 160px 0;
+  }
+  .exploreRestro__titleV1 {
+    max-width: 798px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #6d3078;
+    line-height: 1.2;
+    margin-bottom: 60px;
+  }
+  .exploreRestro__titleV2 {
+    color: #6d3078;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: #f37435;
+  }
+  .exploreRestro__titleV2 span {
+    color: #f37435;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    background-color: #f37435;
+    margin-bottom: 10px;
+  }
+  .btn{
+      color: #fff;
+      font-family: Quicksand;
+  }
+  .exploreRestro__para p {
+    font-size: 18px;
+    color: #565656;
+    margin-bottom: 10px;
+  }
+  .exploreRestro__buttonV2 {
+    margin-top: 40px;
+    background-color: #f37435;
+    width: 184px;
+    height: 48px;
+  }
+  .btn{
+  flex-grow: 0;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  }
+  
+  .exploreRestro__contentV2 {
+    max-width: 840px;
+  }
+  .exploreRestro__imgMob {
+    display: none;
+  }
+  @media (max-width: 1200px) {
+    .exploreRestro__content {
+      padding: 80px 0;
+    }
+    .exploreRestro__titleV1 {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 992px) {
+    .exploreRestro__titleV1 {
+        font-size: 45px;
+        margin-bottom: 30px;
+      
+    }
+  }
+  @media (max-width: 768px) {
+    .exploreRestro {
+      background-color: #fff9ea;
+      background-image: none;
+    }
+    .exploreRestro__imgMob {
+      display: block;
+      text-align: right;
+      position: relative;
+      right: -15px;
+    }
+  }
+ 
+/* nearby restaurent filter section*/
+
+.nearby__restaurent__explore__section{
+    padding:70px 50px;
+    background-image: url(../images/bg-nearbyRestro.png);
+    
+}
+.nearby__restaurent__explore__section__white__background{
+    background-color: #fff;
+}
+.nearby__restaurent__filter__section{
+    display: flex;
+    padding:60px 60px;
+    align-items: center;
+
+    /* border-bottom:1px solid #d3d3d3;
+    border-spacing:20px 20px; */
+   
+
+}
+.all__nearby__restaurent{
+  flex: 1;
+  font-family: Quicksand;
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6d3078;
+
+}
+.all__nearby__restaurent__mob{
+    font-size:16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6d3078;
+    flex: 1;
+}
+.all__nearby__restaurent__filter__icon{
+    display: flex;
+    align-items: center;
+    
+}
+.cost__low__to__high{
+    margin-right: 70px;
+    font-family:Quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #565656;
+  }
+
+.nearby__restaurant__image__section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap:42px;
+    column-gap:35px;
+    padding: 0px 60px;
+}
+.aumodal__location__content{
+    background-color:#fff2f0;
+    padding: 30px;
+}
+.closeBtn{
+    cursor: pointer;
+}
+.aumodal-title{
+    margin-top:20px;
+    font-family: Quicksand;
+    color:#6d3078;
+    font-weight: 600;
+
+}
+
+
+
+@media screen and (max-width:400px) {
+
+    .aumodal__location__content{
+        background-color:#fff2f0;
+        padding: 10px;
+    }
+   input[type="text"].input-lg::-webkit-input-placeholder{
+       font-size: 15px;
+   }
+   .aumodal-title{
+    margin-top:10px;
+    font-family: Quicksand;
+    color:#6d3078;
+    font-weight: 600;
+
+    
+
+}
+
+/*au filter modal*/
+.modal-body {
+    max-height:500px;
+}
+
+
+    
+}
+.aumodal-body{
+    background-color:#fff;
+    margin: 20px 0px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+
+}
+.locateBtn{
+    text-align: center;
+}
+@media screen and (max-width:992px) and (min-width:768px) {
+    .nearby__restaurant__image__section{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap:42px;
+        column-gap:35px;
+        padding: 0px 60px;
+    }
+    
+}
+
+.single__restaurent__wrapper{
+
+    padding: 0 0 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.image__container{
+    display: flex;
+}
+.restaurant__title{
+    display: flex;
+    padding:13px 13px;
+
+}
+.restaurant__title__img{
+    width:36px;
+    height:36px;
+    border-radius: 3px;
+}
+.restarant__name__add{
+    padding:0px 10px;
+}
+.restaurant__name{
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3d3d3d;
+}
+
+.restaurant__add{
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #565656;
+
+}
+.timing__buttons button{
+    border:none;
+    font-size: 12px;
+    margin:0px 0px;
+    padding: 10px 10px;
+    border-radius:4px;
+    font-family:Quicksand;
+   
+}
+@media screen and(max-width:992px) {
+  
+    
+}
+
+
+@media screen and (max-width:768px) {
+.nearby__restaurent__explore__section{
+    padding:40px 16px;
+}
+.nearby__restaurent__filter__section{
+    padding:20px 16px;
+}
+.nearby__restaurent__explore__section__white__background{
+    background-color: #fff;
+    padding:0 0;
+}
+
+.nearby__restaurant__image__section{
+    display:grid;
+    grid-template-columns: auto;
+    padding: 0px 17px;
+    row-gap:21px;
+
+
+}
+.single__restaurent__wrapper{
+ margin:0px 0px; 
+}
+}
+ /* .distance__title{
+
+    width: 48px;
+    height: 23px;
+    flex-grow: 0;
+    margin-top:50px;
+    margin-left: -20px;
+    border-radius: 2px;
+    background-color: rgba(216, 211, 211, 0.8);
+   
+ } */
+
+ 
+  
+   
+    
+
+
+@media screen  and (max-width:991px) {
+    body{
+        padding:0 0;
+        margin:0
+    }
+
+/*au mobile header hidden at Desktop*/
+.aumobile__header{
+    background-color: #fff2f0;
+    height:48px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ }
+ 
+
+ .aumobile__header__left{
+     flex:1;
+     padding-left: 16px;
+     font-size: 12px;
+     font-weight: bold;
+
+    
+     
+ }
+
+ .aumobile__header__caption__orange{
+     font-size:10px;
+     font-family: Quicksand;
+     font-size: 10px;
+     font-weight: 600;
+     color: #565656;
+ }
+
+ .aumobile__header__right{
+     display:flex;
+     padding-right: 16px;
+     text-align: center;
+     align-items: center;
+     
+ }
+ 
+ 
+ .aumobile__header__install__button{
+     width:68px;
+     height:30px;
+     font-size:12px;
+     font-family: Quicksand;
+     font-size: 12px;
+     font-weight: bold;
+     color: #fff;
+     background-color: #f37435;
+     border: none;
+     padding: 7px 16px 8px;
+     border-radius:2px;
+     margin-right: 16px;
+ }
+ .aumobile__header__close__button{
+    width:10px;
+    height:10px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+   
+ }
+
+ /*au desktop header*/
+ .audesktop__header{
+     padding:12px 16px;
+     align-items: center
+ }
+ .audesktop__header__right{
+     display:flex;
+     align-items: center;
+ }
+ .aumobile__input__search{
+    margin-right:25px;
+    font-size:16px;
+    opacity: 0.5;
+    display:flex;
+    align-items: center;
+}
+
+/*aumonbile location section*/
+.audesktop__header__location{
+    height:38px;
+    display: flex;
+    padding:11px 16px 12px 16px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff2f0;
+}
+.audesktop__header__location__address{
+    flex:1;
+}
+
+/*audesktop map section*/
+.aumap__form{
+    height:314px;
+}
+.aumap__form__dinning{
+    width:100%;
+    padding:16px;
+    height:282px;
+
+}
+
+.aubank__dinning__section{
+    padding:0px 16px;
+}
+.aubank__crave__title{
+    margin-top:80px;
+    font-size:35px;   
+}
+
+.auhelp__right__drawer.active{
+    display:block;
+    float:right;
+    position:fixed;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:#fff2f0;
+    z-index: 11111;
+
+
+}
+
+.restaurant__name{
+    font-size:12px;
+}
+.restaurant__add{
+    font-size:10px;
+}
+.timing__buttons button{
+    border:none;
+    margin:6px 0px  6px 8px;
+    padding: 10px 10px;
+    border-radius:4px;
+    font-family:Quicksand;
+    row-gap: 10px;
+   
+}
+.timing__buttons1{
+    margin-top:6px;
+    margin-bottom: 6px;
+}
+}

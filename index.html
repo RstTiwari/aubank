@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage7</title>
+    <!---Attaching Css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!---Attaching Bootstrap CSS file-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-----Fontawsome link attachemnt-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!---Google font style-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---Au mobile header hidden on Desktop-->
+    <div  id ="aumobile__header" class="aumobile__header  hidden-lg hidden-md ">
+        
+        <div class="aumobile__header__left">
+            <div class= "aumobile__header__title">
+                <span style="color:#6d2f78"> AU <span class="aumobile__header__title__orange" style="color:#f37435" >0101</span> App </span>
+            </div>
+            <div class="aumobile__header__caption">
+                <span class="aumobile__header__caption__orange">One App for all your Banking Need</span>
+            </div>
+
+
+        </div>
+        <div class="aumobile__header__right">
+          
+                <button class="aumobile__header__install__button">Install</button>
+                 <img   class="aumobile__header__close__button" id="aumobile__clsoe__btn" src="assets/images/close-lg.png">
+         
+        </div>
+    </div>
+
+    <!---Au header for Desktop-->
+    <div class="audesktop__header position-fixed" style="background-color:none">
+        <div class="audesktop__header__left">
+            <div class="audesktop__header__logo">
+                <img class="audesktop__header__aubanklogo" src="assets/images/header-logo1.png">
+            </div>
+            <div  class="audesktop__header__logo2">
+                <img  class="audesktop__header__silverspoonlogo"src="assets/images/Silverspoon-logo.png">
+            </div>
+            <div class="audesktop__header__location  hidden-xs hidden-sm">
+                <div class="audesktop__header__location__title">
+                    <span>Your Location</span>
+                </div>
+                <div class="audesktop__header__location__address">
+                    <a style="color: #3d3d3d;;" href="#"  data-html="true" data-toggle="popover" 
+                    data-content="<img src='assets/images/close-lg.png' style='float: right ;cursor:pointer;background-color:#fff2f0;' class='closebtn'>
+                    <div class='location__popover__container'><div class='loaction__popover__title' >
+                        <img src='assets/images/Group.png'> Sector 32 , Gurgaon</div class='location__popover__row'>
+                        Showing reasturent on basis of selected Loction <button style='float: right'>Change Me</button></div>" data-trigger="focus" data-placement="bottom" 
+                    > sector 32 , Gurgaon </a> 
+                    <span class="audesktop__header__location__address__changeLogo" data-toggle="modal" data-target="#changeLocation">Change
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i
+                        ></span>
+
+                  
+                </div>
+            </div>
+
+
+        </div>
+        <div class="audesktop__header__center dispaly-md ">
+            <form>
+                <div class="audeskheader__input">
+                    <span class="input__search__icon">
+                        <i class= "glyphicon glyphicon-search "></i>
+                    </span>
+                    <input type="text" id="header__input" class="form__control"  placeholder="Search...">
+
+                </div>
+            </form>
+          
+
+        </div>
+
+        <!---Mobile search icon-->
+        <div class="aumobile__input__search hidden-lg hidden-md ">
+            <i class= "glyphicon glyphicon-search  " style="text-align: center;"></i>
+        </div>
+        <div class="audesktop__header__right">
+           
+            
+            <div class="audesktop__header__right__download ">
+                <button class="audesktop__header__right__downloadBtn hidden-xs hidden-sm"  data-html="true" 
+                data-toggle="popover"  data-trigger="focus" data-content="<img src='assets/images/close-lg.png' style='float:right;cursor:pointer;'> 
+                <div class='download__popover__conatiner'>
+                    <div class='dowload__popover__title'>Dowload</div>
+                    <div class='dowload__popover__para'>AU 
+                        <span class='download__popover__para__orange'>0101</span>App</div>
+                    <div class='download__popover__para_small'>One app for all your Banking Need</div>
+                    <div class='download__popover__barcoder__container' style='text-align:center'><img src='assets/images/qrCode.png' style='width:150px;height:150px;'></div>
+
+                </div>"
+                 data-placement="bottom">Download App</button>
+            </div>
+            <div class="audesktop__header__right__help__section" id ="helpBtn">
+                <img src="assets/images/header-helpIcon.png">
+                <span>Help</span>
+
+            </div>
+          </div>
+        </div>
+    <!----Help right side drawer opens on click only-->
+    <div class="auhelp__right__drawer" id="rightSideDrawer">
+      
+        <img class="help__closeBtn"  id = "drawerCloseBtn" src="assets/images/Close_black.png">
+        <div class = "auhelp__right__drawer__container">
+            <div class="auhelp__right__drawer__title">
+                Need any assistance 
+            </div>
+            <div class="auhelp__right__drawer__para">
+                Laurem implaly is simple dummy text
+            </div>
+            <div class="auhelp__call__section">
+                <div class="auhelp__call__section__left">
+                    <div class="auhelp__call__section__left1">
+                      <img src="assets/images/telephone.png">
+                    </div>
+                    <div class="auhelp__call__section__left2">
+                        <div class="auhelp__call__section__left2A">
+                            Cusmtomer Care Number
+
+                        </div>
+                        <div class="auhelp__call__section__left2B">
+                            <a href="tel:1800 1800 1800">1800 1800 1800</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="auhelp__call__section__right">
+                    <a href="tel:1800 1800 1800"><img src="assets/images/rightArrow.png"></a>    
+                </div>
+
+            </div>
+            <div class="auhelp__call__section">
+                <div class="auhelp__call__section__left">
+                    <div class="auhelp__call__section__left1">
+                      <img src="assets/images/message.png">
+                    </div>
+                    <div class="auhelp__call__section__left2">
+                        <div class="auhelp__call__section__left2A">
+                            Write Mail to Us
+
+                        </div>
+                        <div class="auhelp__call__section__left2B">
+                            <a href="mailto:aubank@tiealliance.com">aubank@tiealliance.com</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="auhelp__call__section__right">
+                    <a href="tel:1800 1800 1800"><img src="assets/images/rightArrow.png"></a>    
+                </div>
+
+            </div>
+        </div>
+    </div>
+        
+    </div>
+
+
+    <!-----au mobile location section-->
+
+    <div class="audesktop__header__location hidden-xl hidden-lg hidden-md ">
+        <div class="audesktop__header__location__address">
+            <span class="audesktop__header__location__title" >Your Location</span> <a style="color: #3d3d3d;;" href="#"> sector 32 , Gurgaon </a> 
+        </div>
+        <div class="audesktop__header__location__address__changeLogo">
+            <span  data-toggle="modal" data-target="#changeLocation" >Change<i class="fa fa-chevron-down" aria-hidden="true"></i
+                ></span>
+
+        </div>
+    </div>
+
+
+    <!-----Au Map form form -->
+    <!-- <div class="aumap__form">
+        <div class="aumap__form_search  hidden-xs hidden-sm">
+            <form action="">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="aumap__form__input" placeholder="Search for reasturent" >
+          
+            </form>
+        </div>
+        <div class="aumap__form__dinning">
+        
+        </div>
+
+    </div>  -->
+
+    <!--Au bank food section-->
+ <!-- explore restro -->
+    <div class="exploreRestro">
+      <div class="container">
+        <div class="exploreRestro__content">
+          <div class="exploreRestro__contentV1">
+            <div class="exploreRestro__titleV1">
+              Do you crave for experiences that are no less than exclusive?
+            </div>
+            <div class="exploreRestro__button">
+              <a  class="btn" style="background-color: #f37435;"
+                >Explore restaurants</a
+              >
+            </div>
+            <div class="exploreRestro__imgMob">
+              <img 
+                src="assets/images/exploreRestro__imgMob.png"
+                alt="exploreRestro__imgMob"
+              />
+            </div>
+          </div>
+          <div class="exploreRestro__contentV2 hidden-md hidden-sm hidden-xl " style="display: none">
+            <div class="exploreRestro__titleV2-img">
+              <img src="assets/images/Silverspoon-logo.png" alt="" />
+            </div>
+            <div class="exploreRestro__titleV2">
+              <span>Welcome to the</span>
+              Silver Spoon Premium Dining Program
+            </div>
+            <div class="exploreRestro__para">
+              <p>
+                Designed exclusively for AU Bank Debit & Credit Card customers,
+                Silver Spoon is the gateway to some of the finest dining
+                experiences ever. From special indulgences, elite privileges to
+                tempting offers like discounts of up to 30% at 300+ restaurants,
+                Silver Spoon is the ticket for every AU Bank's card holder to
+                relish the experience they were born for.
+              </p>
+              <p>
+                So, come let's begin an experiential journey that is satiating
+                like no other.
+              </p>
+            </div>
+            <div class="exploreRestro__button exploreRestro__buttonV2">
+              <a href="#" class="btn"
+                >Explore restaurants</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!---Au bank Reastaurent explore ection-->
+    <div class = "nearby__restaurent__explore__section" >
+        <div class="nearby__restaurent__explore__section__white__background">
+            <div class=nearby__restaurent__filter__section>
+                <div class="all__nearby__restaurent hidden-xs hidden-sm">
+                     All Nearby Restaurants
+                     
+                </div>
+                <div class="all__nearby__restaurent__mob hidden-md  hidden-lg">
+                    All Restaurants
+                    
+               </div>
+                <div class="all__nearby__restaurent__filter__icon">
+                   <div class = "cost__low__to__high hidden-xs hidden-sm hidden-md "><img src="assets/images/nearbyRestro/cost-low-high.png">
+                       <span>Cost low to High</span>
+                  </div>
+                  <div class = "cost__low__to__high cost__low__to__high hidden-xs hidden-sm hidden-md"><img src="assets/images/nearbyRestro/pure-veg.png">
+                    <span>Pure Veg</span>
+                  </div>
+                  <div class = "cost__low__to__high cost__low__to__high hidden-xs hidden-sm hidden-md"><img src="assets/images/nearbyRestro/distance.png">
+                    <span>Distance</span>
+                  </div>
+                  <div class = "fliter__icon" data-toggle="modal" data-target ="#au_filterModal"><img src="assets/images/nearbyRestro/filters.png">
+                    <span >Filters</span>
+                  </div>
+              
+               </div>
+                
+            </div>
+            <!-- <div class="border__rectangel"></div> -->
+            <!--- all nearby reastaurent__image__section-->
+            <div class = "nearby__restaurant__image__section">
+                <div class ="single__restaurent__wrapper"> <!---rest1-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png" >
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1"> 11.00 AM to 11.00PM</button>
+                        <button class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button class="timing__buttons3"> Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restaurant__name">Prasad Food Divine</div>
+                            <div class="restaurant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3" >Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+                <div class ="single__restaurent__wrapper"> <!---rest2-->
+                    <div class="image__container">
+                        <img src="assets/images/nearbyRestro/restro1.jpg" width="100%">
+                        <!-- <div class="distance__title">2Km</div> -->
+                    </div>
+                    <div class ="restaurant__title">
+                        <img  class ="restaurant__title__img"src="assets/images/Indian_Zing.png">
+                        <div class="restarant__name__add">
+                            <div class="restarant__name">Prasad Food Divine</div>
+                            <div class="restarant__add">Dombivali East Thane</div>
+                             
+                        </div>
+                    </div>
+                    <div class="timing__buttons">
+                        <button  class="timing__buttons1">11.00 AM to 11.00PM</button>
+                        <button  class="timing__buttons2"> &#x20B9;850 for 2</button>
+                        <button  class="timing__buttons3">Fine Dinning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-----My modas and attchement towards it -->
+    <!---change Location Modal-->
+ <!-- Modal -->
+ <div class="modal fade aumodal__location" id="changeLocation" role="dialog">
+    <div class="modal-dialog ">
+      <div class="aumodal-content ">
+          <div class = "aumodal__location__content">
+        
+          <img  class = "closeBtn" src = "assets/images/close-lg.png" style ="float:right;cursor: pointer;" data-dismiss="modal">
+          <div class="aumodal-header">
+               <h4 class=" aumodal-title">Share your location With us</h4>
+        </div>
+        <div class=" aumodal-body">
+         <form>
+             <img  class="search__img" src="assets/images/search.svg">
+             <input  class = "input-lg"type ="text"  placeholder = "search your locality">
+            
+         </form>
+        </div>
+        <div class="aumodal-footer">
+            <div class = "aumodal-footer__title"> Trending City</div>
+            
+         
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- au_filterModal for nearby restro section-->
+ <div class="modal fade" id="au_filterModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content"  >
+      <div
+        class="modal-header"
+        style="
+          background-color: #fff2f0;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        "
+      >
+        <img src="assets/images/CLose@2x.png"  style="width: 14px; height: 14px; font-weight: 500;" class="close" data-dismiss="modal">
+        
+       
+        <h4 class="modal-title"
+         >Filter by</h4>
+      </div>
+      <div
+        class="modal-body"
+        style="background-color: #f5e8e6"
+      >
+        <div class="row au_filter_modal" style="display: flex">
+          <div
+            class="col-xs-4 col-lg-4"
+            style="
+              box-shadow: 3px 3px 10px -2px #f5e8e6;
+              padding-left: 0px;
+              padding-right: 0px;
+              overflow-y:none;
+              overflow-x: auto;
+              background-color: white;
+              z-index: 999;
+            "
+
+             
+          >
+            <ul class="nav">
+              <li class="active">
+                <a data-toggle="tab" href="#cuisine" id="cuisine_anchor"
+                  >Cuisine</a
+                >
+              </li>
+              <li>
+                <a data-toggle="tab" href="#distance" id="distance_anchor"
+                  >Distance</a
+                >
+              </li>
+              <li>
+                <a data-toggle="tab" href="#price" id="price_anchor"
+                  >Price for two</a
+                >
+              </li>
+              <li>
+                <a data-toggle="tab" href="#type" id="type_anchor"
+                  >Type of Dining</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-xs-8 col-lg-8"
+            style="padding: 10px; overflow: auto ; background-color:#fff2f0 ; min-height:350px;"
+          >
+            <div class="tab-content">
+              <div id="cuisine" class="tab-pane fade in active">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_asian"
+                          />
+                          <span class="checkbox_value">Asian</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_cafe"
+                          />
+                          <span class="checkbox_value">Cafe</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_chinese"
+                          />
+                          <span class="checkbox_value"
+                            >Chinese</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_fast_food"
+                          /><span class="checkbox_value"
+                            >Fast Food</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_italian"
+                          />
+                          <span class="checkbox_value"
+                            >Italian</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_finger_food"
+                          /><span class="checkbox_value"
+                            >Finger Food</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_north_italian"
+                          /><span class="checkbox_value"
+                            >North Indian</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_awadhi"
+                          /><span class="checkbox_value">Awadhi</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_awadhi"
+                          /><span class="checkbox_value">South Indian</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_awadhi"
+                          /><span class="checkbox_value">Hyderabadi</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="checkbox au_dining_filter_checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            class="au_dining_filter_checkbox_input"
+                            value="cu_awadhi"
+                          /><span class="checkbox_value">American</span></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="distance" class="tab-pane fade">
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="dist_zero"
+                    /><span class="checkbox_value">0 KM - 5 KM</span></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="dist_five"
+                    /><span class="checkbox_value">5 KM - 10 KM</span></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="dist_ten"
+                    /><span class="checkbox_value"
+                      >10 KM - 15 KM</span
+                    ></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="dist_fifteen"
+                    /><span class="checkbox_value"
+                      >15 KM - 20 KM</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div id="price" class="tab-pane fade">
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="pr_zero"
+                    /><span class="checkbox_value"
+                      >₹500 - ₹1,000</span
+                    ></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="pr_one"
+                    /><span class="checkbox_value"
+                      >₹1,000 - ₹1,500</span
+                    ></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="pr_two"
+                    /><span class="checkbox_value"
+                      >₹1,500 - ₹2,500</span
+                    ></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="pr_three"
+                    /><span class="checkbox_value"
+                      >₹2,500 - ₹3,000</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div id="type" class="tab-pane fade">
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="type_zero"
+                    /><span class="checkbox_value">Fine Dining</span></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="type_one"
+                    /><span class="checkbox_value"
+                      >Casual Dining</span
+                    ></label
+                  >
+                </div>
+                <div class="checkbox au_dining_filter_checkbox">
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="au_dining_filter_checkbox_input"
+                      value="type_two"
+                    /><span class="checkbox_value">Cafe</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-xs-6" style="text-align: left; margin-top: 8px">
+            <a class="au_dining_filter_anchor" style="color: #b3b3b3"
+              >Clear all</a
+            >
+          </div>
+          <div class="col-xs-6">
+            <button
+              class="hidden-sm hidden-xs au_dining_filter_button"
+              style="background-color: #b3b3b3; color: #fff"
+            >
+              Apply & Show Restaurants
+            </button>
+            <button
+              class="hidden-lg hidden-md au_dining_filter_button"
+              style="background-color: #b3b3b3; color: #fff"
+            >
+              Apply Filter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+              
+             
+               
+               
+                
+
+        
+    
+
+     <!---Attacjhing jquery File-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Attaching JS file -->
+     <script src="assets/JS/index.js"></script>
+    <!---Attaching boostrap JS file--->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+</body>
+</html>

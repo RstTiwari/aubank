@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="BR14_Manage-Limits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02" transform="translate(-238.000000, -119.000000)" fill="#F37435">
+            <path d="M241.991067,116.154479 C241.758868,115.943159 241.397028,115.949394 241.172607,116.168583 C240.948186,116.387772 240.941802,116.741175 241.158166,116.96796 L247.444205,123.107441 L241.158166,129.03204 C240.941802,129.258825 240.948186,129.612228 241.172607,129.831417 C241.397028,130.050606 241.758868,130.056841 241.991067,129.845521 L249,123.107441 L241.991067,116.154479 Z" id="Shape" transform="translate(245.000000, 123.000000) rotate(90.000000) translate(-245.000000, -123.000000) "></path>
+        </g>
+    </g>
+</svg>
